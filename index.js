@@ -32,8 +32,8 @@ sortedRobots = robots.map((element) => {
 
 coloredZebraStripes = zebraStripes.map((element,index) => {
   if (index % 2 === 0) {
-    return {width = element.width, color: 'black'};
+    return {width: element.width, color: 'black'};
   } else {
-    return {width = element.width, color: 'white'};
+    return {width: element.width, color: 'white'};
   }
 });
