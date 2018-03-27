@@ -22,7 +22,7 @@ const zebraStripes = [
   { width: 7.31, color: null }
 ];
 
-sortedRobots = robots.map((element) => {
+var sortedRobots = robots.map((element) => {
   if (knownDecepticons.includes(element.name)) {
     return {name: element.name, alliance: 'decepticon'};
   } else {
@@ -30,7 +30,7 @@ sortedRobots = robots.map((element) => {
   }
 });
 
-coloredZebraStripes = zebraStripes.map((element,index) => {
+var coloredZebraStripes = zebraStripes.map((element,index) => {
   if (index % 2 === 0) {
     return {width: element.width, color: 'black'};
   } else {
